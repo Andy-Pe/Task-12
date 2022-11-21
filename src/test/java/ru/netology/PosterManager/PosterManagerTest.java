@@ -18,7 +18,6 @@ class PosterManagerTest {
     PosterItem item10 = new PosterItem(1, 5, "Matrix10", 1999, "Sci-fi/Action");
 
 
-
     @BeforeEach
     public void setup() {
         manager.addFilm(item1);
@@ -51,6 +50,7 @@ class PosterManagerTest {
         PosterItem[] actual = manager.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
+
     }
 
     @Test
@@ -59,7 +59,7 @@ class PosterManagerTest {
         PosterItem[] expected = {item10, item9, item8, item7, item6, item5, item4, item3, item2, item1};
         PosterItem[] actual = manager.findLast();
 
-        Assertions.assertArrayEquals(expected,actual);
+        Assertions.assertArrayEquals(expected, actual);
 
     }
 }

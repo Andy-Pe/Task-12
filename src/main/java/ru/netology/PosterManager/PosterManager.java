@@ -6,12 +6,12 @@ public class PosterManager {
     private int limit;
 
     public PosterManager() {
-    this.limit = 10;
+        this.limit = 10;
 
     }
 
-    public PosterManager (int limit) {
-    this.limit = limit;
+    public PosterManager(int limit) {
+        this.limit = limit;
     }
 
 
@@ -30,26 +30,26 @@ public class PosterManager {
 
     public PosterItem[] findAll() {
         PosterItem[] addition = new PosterItem[getItems().length];
-        for(int i = 0; i < addition.length; i++ ) {
+        for (int i = 0; i < addition.length; i++) {
             addition[i] = items[i];
         }
         return addition;
 
-        }
+    }
 
-       public PosterItem[] findLast() {
+    public PosterItem[] findLast() {
         int resultLength;
-        if(items.length < limit) {
+        if (items.length < limit) {
             resultLength = items.length;
         } else {
             resultLength = limit;
         }
         PosterItem[] tmp = new PosterItem[resultLength];
-           for (int i = 0; i < tmp.length; i++) {
-               tmp[i] = items[items.length - 1 - i];
-           }
-           return tmp;
+        for (int i = 0; i < tmp.length; i++) {
+            tmp[i] = items[items.length - 1 - i];
         }
+        return tmp;
     }
+}
 
 
