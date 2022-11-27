@@ -8,14 +8,14 @@ class PosterManagerTest {
     PosterManager manager = new PosterManager();
     PosterItem item1 = new PosterItem(1, 5, "Matrix1", 1999, "Sci-fi/Action");
     PosterItem item2 = new PosterItem(4, 26, "Matrix2", 1999, "Crime/Action");
-    PosterItem item3 = new PosterItem(1, 5, "Matrix3", 1999, "Sci-fi/Action");
-    PosterItem item4 = new PosterItem(1, 5, "Matrix4", 1999, "Sci-fi/Action");
-    PosterItem item5 = new PosterItem(1, 5, "Matrix5", 1999, "Sci-fi/Action");
-    PosterItem item6 = new PosterItem(1, 5, "Matrix6", 1999, "Sci-fi/Action");
-    PosterItem item7 = new PosterItem(1, 5, "Matrix7", 1999, "Sci-fi/Action");
-    PosterItem item8 = new PosterItem(1, 5, "Matrix8", 1999, "Sci-fi/Action");
-    PosterItem item9 = new PosterItem(1, 5, "Matrix9", 1999, "Sci-fi/Action");
-    PosterItem item10 = new PosterItem(1, 5, "Matrix10", 1999, "Sci-fi/Action");
+    PosterItem item3 = new PosterItem(8, 74, "Matrix3", 1999, "Sci-fi/Action");
+    PosterItem item4 = new PosterItem(7, 25, "Matrix4", 1999, "Sci-fi/Action");
+    PosterItem item5 = new PosterItem(23, 34, "Matrix5", 1999, "Sci-fi/Action");
+    PosterItem item6 = new PosterItem(36, 7, "Matrix6", 1999, "Sci-fi/Action");
+    PosterItem item7 = new PosterItem(54, 8, "Matrix7", 1999, "Sci-fi/Action");
+    PosterItem item8 = new PosterItem(5, 2, "Matrix8", 1999, "Sci-fi/Action");
+    PosterItem item9 = new PosterItem(2, 1, "Matrix9", 1999, "Sci-fi/Action");
+    PosterItem item10 = new PosterItem(8, 78, "Matrix10", 1999, "Sci-fi/Action");
 
 
     @BeforeEach
@@ -44,7 +44,7 @@ class PosterManagerTest {
     }
 
     @Test
-    public void shouldAdditionAllItems() {
+    public void shouldFindAllFilms() {
 
         PosterItem[] expected = {item1, item2, item3, item4, item5, item6, item7, item8, item9, item10};
         PosterItem[] actual = manager.findAll();
